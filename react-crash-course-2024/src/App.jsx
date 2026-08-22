@@ -2,7 +2,7 @@
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import HomeCards from './components/HomeCards';
-import JobListing from "./components/JobListing";
+import JobListings from "./components/JobListings";
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
 
       <HomeCards />
       
-      <JobListing />
+      <JobListings />
 
       <section className="m-auto max-w-lg my-10 px-6">
         <a
