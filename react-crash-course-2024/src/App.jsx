@@ -28,13 +28,12 @@ const App = () => {
   // Delete Job
   const deleteJob = async (id) => {
     console.log('App delete - ',id); 
-    // const res = await fetch('/api/jobs', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify(newJob),
-    // });
+    const res = await fetch(`/api/jobs/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    });
     return;
   }
 

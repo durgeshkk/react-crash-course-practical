@@ -83,20 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "title": "Test Job J7",
-      "type": "Full-Time",
-      "location": "Pune",
-      "description": "This is a Tets Job 7.",
-      "salary": "Under $50K",
-      "company": {
-        "name": "Meri Company",
-        "description": "Nahi Dunga",
-        "contactEmail": "testj7@test.com",
-        "contactPhone": ""
-      },
-      "id": "AwQts6xLEJQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
