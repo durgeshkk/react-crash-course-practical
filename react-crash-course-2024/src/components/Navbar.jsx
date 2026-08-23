@@ -28,15 +28,15 @@ const Navbar = () => {
                     >Home</a
                   >
                   <a
-                    href="/jobs.html"
+                    href="/jobs"
                     className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                    >Jobs</a
-                  >
+                    >Jobs
+                  </a>
                   <a
-                    href="/add-job.html"
+                    href="/add-job"
                     className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                    >Add Job</a
-                  >
+                    >Add Job
+                  </a>
                 </div>
               </div>
             </div>

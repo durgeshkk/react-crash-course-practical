@@ -2,6 +2,7 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MainLayout from './layouts/MainLayout';
+import JobsPage from "./pages/JobsPage";
 
 // create our router
 // Route -> Route Component, we can actually pass path within route but for now, it's only for home page, so we can add index and then an element representing the route.
@@ -10,6 +11,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<HomePage />} />
+      <Route path="/jobs" element={<JobsPage />} />
     </Route>
   )
 );
@@ -20,19 +22,3 @@ const App = () => {
 };
 
 export default App;
-
-{/* const App = () => {
-  return (
-    <>
-      <Navbar />
-
-      <Hero title='React Dev Testing' subtitle='React Dev passing subtitle via props...' />
-
-      <HomeCards />
-
-      <JobListings />
-
-      <ViewAllJobs />
-    </>
-  )
-} */}
