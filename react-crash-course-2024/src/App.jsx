@@ -5,6 +5,7 @@ import MainLayout from './layouts/MainLayout';
 import JobsPage from "./pages/JobsPage";
 import NotFoundPage from './pages/NotFoundPage';
 import JobPage, {jobLoader} from "./pages/JobPage";
+import AddJobPage from "./pages/AddJobPage";
 
 // create our router
 // Route -> Route Component, we can actually pass path within route but for now, it's only for home page, so we can add index and then an element representing the route.
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<HomePage />} />
       <Route path="/jobs" element={<JobsPage />} />
+      <Route path="/add-job" element={<AddJobPage />} />
       <Route path="/jobs/:id" element={<JobPage />} loader={jobLoader}/>
       {/* Below line is like catch job! */}
       <Route path="*" element={<NotFoundPage />} /> 
