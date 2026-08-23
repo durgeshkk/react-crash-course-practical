@@ -1,5 +1,5 @@
 // const Hero = (props) => {
-const Hero = ({title, subtitle, defaultProp='Default Prop Testing'}) => {
+const Hero = ({title='React Dev Testing', subtitle='Subtitle testing', defaultProp='Default Prop Testing'}) => {
   return (
     <section className="bg-indigo-700 py-20 mb-4">
         <div
