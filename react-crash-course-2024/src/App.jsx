@@ -9,7 +9,8 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 // create our router
 // Route -> Route Component, we can actually pass path within route but for now, it's only for home page, so we can add index and then an element representing the route.
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route index element={<h1>"My Routing App"</h1>} />)
+  // createRoutesFromElements(<Route index element={<h1>"My Routing App"</h1>} />)
+  createRoutesFromElements(<Route path="/about" element={<h1>"My Routing App"</h1>} />)
 );
 
 // Provider is the one providing the router...
