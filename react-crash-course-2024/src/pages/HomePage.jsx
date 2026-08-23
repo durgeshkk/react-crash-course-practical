@@ -1,4 +1,3 @@
-// import Navbar from "./components/Navbar"
 // import HomeCards from './components/HomeCards';
 // import JobListings from "./components/JobListings";
 // import ViewAllJobs from "./components/ViewAllJobs";
