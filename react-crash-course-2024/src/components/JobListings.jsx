@@ -12,8 +12,9 @@ const JobListings = ({ isHome = false }) => {
       // init fetchJobs
       const fetchJobs = async () => {
         const apiUrl = isHome
-          ? 'http://localhost:8000/jobs?_page=1&_per_page=3'
-          : 'http://localhost:8000/jobs';
+          ? '/api/jobs?_page=1&_per_page=3'
+          : '/api/jobs';
+        // console.log(apiUrl);
 
         try {
           const res = await fetch(apiUrl);
